@@ -65,7 +65,7 @@ footer h3{
     background: url(/images/bridge\ opacity0.45.png);
     background-position: center;
     background-repeat: no-repeat;
-    height: 835px;
+    height: 850px;
 }
 #home #t1{
     padding-top: 60px;
@@ -125,7 +125,7 @@ footer h3{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 835px;
+    height: 850px;
 }
 #About #i1 img{
     width: 200px;
@@ -156,14 +156,22 @@ footer h3{
     background: url('/images/projects\ 0.4.png');
     background-position: center;
     background-size:cover;
+    height: 850px;
 }
-#projects #project1{
-    height: 835px;
+#projects .p{
+    display: flex;
+    padding: 20px 25px;
+    border-bottom: 1px solid black;
 }
-#projects #project1 h1{
-    text-align: center;
-    padding-top: 200px;
-    font-size: 28px;
+#projects .p img{
+    margin-right: 70px;
+    width: 350px;
+    box-shadow: 7px 7px 6px rgb(194, 194, 194);
+}
+#projects .p #p-text h3{
+    color: #8b8b8b;
+    margin-top: 7px;
+    margin-bottom: 25px;
 }
 
 /* --------------------------------------------------------------------CONTACT--------------------- */
@@ -173,7 +181,7 @@ footer h3{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 835px;
+    height: 850px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -186,6 +194,7 @@ footer h3{
     margin: 200px 100px;
     background-color:rgba(240, 236, 236,0.7);
     border: 1px solid black;
+    border-radius: 3%;
 }
 #contact #info {
     padding: 20px 17px;
