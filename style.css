@@ -53,6 +53,13 @@ nav h3{
     color: black;
 }
 
+@media (max-width: 620px){
+    #potpis h3{
+        display: none;
+    }
+}
+
+
 /* ----------------------------------------------------------------------FOOTER------------- */
 footer h3{
     text-align: center;
@@ -116,6 +123,18 @@ footer h3{
     font-weight: 100px;
 }
 
+@media (max-width: 950px){
+    #images .box {
+        width: 25%;
+    }
+}
+@media (max-width: 550px){
+    #images .box {
+        width: 30%;
+        margin: 10px 5px ;
+    }
+}
+
 /* -----------------------------------------------------------------------ABOUT-------------------- */
 #About{
     background: url('/images/About\ Opacity\ 0.3.png');
@@ -151,6 +170,44 @@ footer h3{
 #About #text {
     margin: 0 55px;
 }
+@media (max-width: 1000px){
+    #About{
+        flex-direction: column;
+    }
+    #About #i1{
+        order: 2;
+    }
+    #About #i1{
+        order: 2;
+    }
+    #About #i1 img{
+        display: none;
+        width: 150px;
+        margin: 25px 12px;
+    }
+    #About #i2 img{
+        height: 300px;
+        width: 42%;
+        margin: 25px 15px;
+    }
+    @media (max-width: 600px){
+        #About #i2{
+            display: flex;
+            flex-direction: column;
+        } 
+        #About #i2 img{
+            width: 280px;
+            height: 280px;
+            margin: 25px 0;
+            border: 1px solid black;
+            border-radius: 5%;
+        }
+        #About{
+            height: 1200px;
+        }
+    }
+    
+}
 /* --------------------------------------------------------------------PROJECTS------------------------- */
 #projects{
     background: url('/images/projects\ 0.4.png');
@@ -172,6 +229,34 @@ footer h3{
     color: #8b8b8b;
     margin-top: 7px;
     margin-bottom: 25px;
+}
+#projects .p #p-text h4{
+    text-indent: 2%;
+    margin-bottom: 15px;
+}
+@media(max-width: 800px){
+    #projects .p{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        border-bottom: 1px solid black;
+    }
+    #projects .p #p-text h2, #projects .p #p-text h3, #projects .p #p-text h4{
+        text-align: center;
+    }
+    #projects .p #p-text{
+        order: -1;
+    }
+    #projects{
+        height: 1000px;
+    }
+    #projects .p img{
+        margin-right: 0;
+        width: 350px;
+        box-shadow: 7px 7px 6px rgb(194, 194, 194);
+    }
+    
 }
 
 /* --------------------------------------------------------------------CONTACT--------------------- */
@@ -235,4 +320,14 @@ footer h3{
 }
 #contact #contact-mail label {
     font-weight: 600;
+}
+@media (max-width: 830px){
+    #contact{
+        border: none;
+    }
+}
+@media (max-width: 635px){
+    #contact{
+        flex-direction: column;
+    }
 }
