@@ -65,6 +65,9 @@ nav h3{
     #navbar{
         left: 20px;
     }
+    nav{
+        margin-bottom: 50px;
+    }
     
 }
 /* ----------------------------------------------------------------------FOOTER------------- */
@@ -294,6 +297,7 @@ footer h3{
         width: 300px;
     }
     #projects{
+        height: 1050px;
         padding-top: 50px;
     }
 }
